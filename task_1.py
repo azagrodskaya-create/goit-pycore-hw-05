@@ -20,10 +20,9 @@ def caching_fibonacci() -> Callable[[int], int]:
     return fibonacci
 
 
-# створюємо екземпляр функції fibonacci з кешуванням
-fib = caching_fibonacci()
-
 # тестування функції
 if __name__ == "__main__":
+    fib = caching_fibonacci()
+    
     print(fib(10))  # 55
     print(fib(15))  # 610
